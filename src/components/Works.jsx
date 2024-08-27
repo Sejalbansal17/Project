@@ -12,9 +12,9 @@ const ProjectCard = ({
   index,
   name,
   description,
-  tags,
+  //tags,
   image,
-  source_code_link,
+  //source_code_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -52,7 +52,7 @@ const ProjectCard = ({
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
         </div>
 
-        <div className='mt-4 flex flex-wrap gap-2'>
+        {/* <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -61,7 +61,7 @@ const ProjectCard = ({
               #{tag.name}
             </p>
           ))}
-        </div>
+        </div> */}
       </Tilt>
     </motion.div>
   );
